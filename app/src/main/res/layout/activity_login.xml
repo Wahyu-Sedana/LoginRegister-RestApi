@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".user.LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+      <FrameLayout
+          android:layout_width="match_parent"
+          android:layout_marginTop="50dp"
+          android:layout_height="wrap_content">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <EditText
+                  android:inputType="textEmailAddress"
+                  android:id="@+id/email"
+                  android:background="@drawable/background_input"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:paddingStart="10dp"
+                  android:paddingEnd="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:hint="Email"/>
+
+              <EditText
+                  android:inputType="textPassword"
+                  android:id="@+id/password"
+                  android:background="@drawable/background_input"
+                  android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:paddingStart="10dp"
+                  android:paddingEnd="10dp"
+                  android:layout_marginBottom="10dp"
+                  android:hint="Password"/>
+
+          </LinearLayout>
+
+      </FrameLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linkRegis"
+            android:text="don't have account? Register"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</LinearLayout>
